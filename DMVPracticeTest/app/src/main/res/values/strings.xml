@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DMVPracticeTest</string>
+
+    <string name="i_want_to">I want to...</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_weclome">DMV Test Practice</string>
+    <string name="practice">Look at practice questions</string>
+    <string name="take_a_test">Take a test</string>
+    <string name="title_activity_test">Test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_dmvtest">DMVTest</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="questionWebSource">http://bapatamol.alwaysdata.net/dmvquestions/getQJson.php</string>
+    <string name="strategyWebSource">http://bapatamol.alwaysdata.net/dmvquestions/getStrategy.php</string>
+</resources>

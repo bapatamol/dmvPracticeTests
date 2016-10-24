@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head> <title> DMVQuestions - Add question to database </title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<center>
+<br/>
+<h1> Please add your question </h1>
+<br/></br/>
+
+<form action="putAcctQs.php" method="post">
+<table>
+<tr>
+      <th> Option </th>
+      <th> Details </th>
+      <th> Example </th>
+</tr>
+<tr>
+	<td>
+	Question Text:
+	</td>
+	<td>
+	<input type="text" name="questionText"/>
+	</td>
+        <td> 
+        <center>What is 2 + 2?</center>
+        </td>
+</tr>
+<tr>
+	<td>
+	Choice 1:
+	</td>
+	<td>
+	<input type="text" name="choice1"/>
+	</td>
+        <td> 
+        <center>4</center>
+        </td>
+</tr>
+<tr>
+	<td>
+	Choice 2:
+	</td>
+	<td>
+	<input type="text" name="choice2"/>
+	</td>
+        <td> 
+        <center>8</center>
+        </td>
+</tr>
+<tr>
+	<td>
+	Choice 3
+	</td>
+	<td>
+	<input type="text" name="choice3"/>
+	</td>
+        <td> 
+        <center>16</center>
+        </td>
+</tr>
+<tr>
+	<td>
+	Choice 4
+	</td>
+	<td>
+	<input type="text" name="choice4"/>
+	</td>
+        <td> 
+        <center>32</center>
+        </td>
+</tr>
+<tr>
+	<td>
+	Correct Choice Number
+	</td>
+	<td>
+	<input type="text" name="answer"/>
+	</td>
+        <td>
+        <center>Enter 1 here, because 2+2=4, and that correct answer is choice # <b>1</b></center>
+        </td>
+</tr>
+<tr>
+	<td>
+        Attachment / Photo Link
+	</td>
+	<td>
+	<input type="text" name="attachmentLink"/>
+	</td>
+        <td> 
+        Enter URL of the image here; if applicable, example: <b>http://goo.gl/9Gd7zV</b>
+        </td>
+</tr>
+<tr><td/><td/><td/></tr>
+<tr><td/><td/><td/></tr>
+<tr><td/><td/><td/></tr>
+<tr>
+	<td align="center" colspan="2"> 
+        <input type="submit" value="Submit Question">
+	</td>
+</tr>
+</table>
+
+</form>
+</center>
+
+</body>
+</html>	

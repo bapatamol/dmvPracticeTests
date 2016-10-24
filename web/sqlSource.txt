@@ -1,0 +1,163 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 2.11.4
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: May 07, 2015 at 09:11 PM
+-- Server version: 5.1.57
+-- PHP Version: 5.2.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `a2215885_amol`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `acctQuestions`
+--
+
+CREATE TABLE `acctQuestions` (
+  `question` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice1` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice2` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice3` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice4` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `attachmentLink` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `acctQuestions`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dmvquestions`
+--
+
+CREATE TABLE `dmvquestions` (
+  `question` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice1` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice2` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice3` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice4` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `attachmentLink` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=77 ;
+
+--
+-- Dumping data for table `dmvquestions`
+--
+
+INSERT INTO `dmvquestions` VALUES('When you find both a solid and a dashed yellow line between opposing lanes of traffic, you must not pass:', 'if the solid yellow line is not on your side', 'if the dashed yello line is on your side', '*if the solid yellow line is on your side ', 'None of the options', '', 1);
+INSERT INTO `dmvquestions` VALUES('The traffic striping marks of diagonal yellow lines are on streets and highways. These indicate:', 'The road is narrowing', 'there is an obstruction on the roadway', '*either A or B', 'neither A nor B', '', 2);
+INSERT INTO `dmvquestions` VALUES('If a pedestrian is in a marked or unmarked crosswalk, you must:', 'reduce your speed and proceed with caution', '*stop and wait until pedestrian has passed', 'not stop your vehicle', 'increase your speed and cross the crosswalk quickly', '', 3);
+INSERT INTO `dmvquestions` VALUES('Flashing arrow panels may be used in work zones to:', 'stop all vehicles near work zone', 'indicate the permissible speed limit', 'direct vehicles into parking areas', '*guide drivers into correct lanes', '', 4);
+INSERT INTO `dmvquestions` VALUES('When you drive in city traffic, you should try to look at least:', '3 blocks ahead', '2 blocks ahead', '4 blocks ahead', '*1 block ahead', '', 5);
+INSERT INTO `dmvquestions` VALUES('Proactively looking ahead, to the sides, and behind the vehicle to anticipate problems ahead is part of:', '*defensive driving', 'agressive driving', 'disciplined driving', 'distracted driving', '', 6);
+INSERT INTO `dmvquestions` VALUES('On some roadways, some lanes reserved as ''Transit'' are used for:', 'trucks only', 'bicycles only', 'HOV only', '*buses only', '', 7);
+INSERT INTO `dmvquestions` VALUES('If you see a vehicle coming toward you in your lane from the opposite direction, what should you do?', 'You must slow down and sound your horn', 'You must flash your headlights', 'You must pull as far to the right as you safely can', '*All of the options', '', 8);
+INSERT INTO `dmvquestions` VALUES('If you double your speed on a highway, your braking distance increases by', '3 times', '5 times', '*four times', 'two times', '', 9);
+INSERT INTO `dmvquestions` VALUES('A flashing yellow arrow means:', 'you must not proceed in the direction of arrow', '*you may proceed with caution in the direction of arrow', 'you may go straight ahead', 'you must come to full stop in direction of arrow', '', 10);
+INSERT INTO `dmvquestions` VALUES('For interstate driving, slow-moving vehicles must travel _________, except when passing.', 'in the middle lane', 'in the left hand lane', '*in the right hand lane ', 'in the shoulder lane', '', 11);
+INSERT INTO `dmvquestions` VALUES('When you see a triangle-shaped road sign while driving, you must:', 'make a right turn', 'come to a compelete stop', 'increase your speed', '*reduce your speed and yield', '', 12);
+INSERT INTO `dmvquestions` VALUES('When approaching pedestrians who are walking on or crossing the roadway, you must:', '*slow down, yield and be prepared to stop', 'accelerate and move quickly', 'blow your horn, slow down and stop', 'use emergency lights', '', 13);
+INSERT INTO `dmvquestions` VALUES('If you want to cross several lanes in a multi-lane highway:', 'take them with reduced speed', 'take them with higher speed', '*take them one at a time', 'take them 3 at a time', '', 14);
+INSERT INTO `dmvquestions` VALUES('If a driver behind you is following too closely, you must:', 'move to the left lane and increase your speed', 'move to the left lane and reduce your speed', 'move to the right lane and stop your vehicle', '*move to the right lane and reduce your speed', '', 15);
+INSERT INTO `dmvquestions` VALUES('If you are changing lanes, preparing to pass another vehicle, or entering traffic, signal and check for passing traffic by first using your mirrors and then:', 'by checking the oncoming traffic', 'by checking the front of your vehicle', 'by checking the back of your vehicle', '*by checking your vehicle''s blind spot', '', 16);
+INSERT INTO `dmvquestions` VALUES('Black on orange signs on a highway identify:', 'traffic laws and regulations', '*specific information and directions to drivers in worker zones', 'special cconditions or hazard ahead', 'directions routes and distances', '', 17);
+INSERT INTO `dmvquestions` VALUES('When should you switch on your high-beam headlights?', 'When you drive in construction areas', 'When you drive on unfamiliar roads', 'where there are may be people along the side of the road', '*All of the options', '', 18);
+INSERT INTO `dmvquestions` VALUES('Additional fines will be charged if you are caught driving ____mph or more over the posted limit.', '10', '*20', '30', '35', '', 19);
+INSERT INTO `dmvquestions` VALUES('Fines will _____ if you speed in marked construction zones.', '*double', 'reduce', 'triple', 'not be charged', '', 20);
+INSERT INTO `dmvquestions` VALUES('If you are caught driving in excess of _____ mph your driving privileges will be revoked for a minimum of six months.', '70', '80', '*100', '90', '', 21);
+INSERT INTO `dmvquestions` VALUES('Hand and arm signals:', 'during day light in addition to, or instead of, turn signals.', 'may not be used during the night', 'may not be used while driving a vehicle constructed or loaded so that hand signals are not visible', '*All of the options', '', 22);
+INSERT INTO `dmvquestions` VALUES('While making a turn, show your intent by indicating at least _____ feet before the turn', '*100', '200', '400', '300', '', 23);
+INSERT INTO `dmvquestions` VALUES('U turns are illegal:', 'near the tops of hills', 'on curves where other drivers cannot see you from 1,000 feet away.', 'When No U-Turn signs are posted', '*All of the options', '', 24);
+INSERT INTO `dmvquestions` VALUES('Do not attempt to pass another vehicle in locations', 'where a “No Passing Zone” sign is posted', 'where there is a solid yellow line on your side of the center line. ', 'Double solid yellow lines', '*All of the options', '', 25);
+INSERT INTO `dmvquestions` VALUES('If a vehicle has a passenger airbag, it is essential for children ____ years of age and under to ride in the backseat.', '*12', '11', '10', '13', '', 26);
+INSERT INTO `dmvquestions` VALUES('Children under _______ years of age must use a federally approved, properly installed child safety restraint system.', '*4', '5', '2', '3', '', 27);
+INSERT INTO `dmvquestions` VALUES('Infants must ride in a rear - facing child safety restraint system until they are at least ____year of age and weigh at least 20pounds.', '*1', '6 months ', '18 months', '2', '', 28);
+INSERT INTO `dmvquestions` VALUES('It is the driver’s responsibility', 'to make sure that other passengers are safe.', '*all  are correct', 'Insist that all passengers wear seat belts', 'Be sure that children are buckled into an age-appropriate child passenger restraint system.', '', 29);
+INSERT INTO `dmvquestions` VALUES('Every driver who is involved in a crash that results in injury, death, or property damage of $1, 000or more must file a traffic crash report within ____ days of the incident.', 'reasonable', '*10', '7', '30', '', 30);
+INSERT INTO `dmvquestions` VALUES('A person may use wireless communication device:', 'to send messages', 'to call', 'to email', '*None of the above', '', 31);
+INSERT INTO `dmvquestions` VALUES('When a school bus is stopped with its red lights flashing and its stop arm extended, you must stop your vehicle at least ___ feet from the bus', '*20', '100', '200', '50', '', 32);
+INSERT INTO `dmvquestions` VALUES('You are not required to stop for a school bus with its red lights flashing if ', '*it is on the opposite side of a separated roadway.', 'the road is not separated', 'N/A', 'N/A', '', 33);
+INSERT INTO `dmvquestions` VALUES('A commercial vehicle is a motor vehicle or combination of motor vehicles weighing more than pounds that is used to transport passengers or property.', '10000', '15000', '*26000', '25000', '', 34);
+INSERT INTO `dmvquestions` VALUES('Regulatory signs are:', '*Red and white', 'Yellow', 'Orange', 'Green', '', 35);
+INSERT INTO `dmvquestions` VALUES('Warnings signs are ', '*Yellow and Orange', 'Red and white', 'Blue ', 'Brown', '', 36);
+INSERT INTO `dmvquestions` VALUES('Informational signs are', '*Green Blue Brown', 'Red and white', 'Yellow', 'Orange', '', 37);
+INSERT INTO `dmvquestions` VALUES('Brown signs point out', 'historical signs', 'cultural signs', 'recreational signs', '*All of the options', '', 38);
+INSERT INTO `dmvquestions` VALUES('Blue signs point out', '*services such as telephone gas, foods, motels, hospitals and rest areas', 'cultural signs', 'guidance and information signs', 'All of the options', '', 39);
+INSERT INTO `dmvquestions` VALUES('Green signs indicate', 'Interstate Exits', 'Distances to cities', 'interstate interchanges, street or route names, and bicycle routes.', '*All of the options', '', 40);
+INSERT INTO `dmvquestions` VALUES('SIPDE is a 5 - step process used to make appropriate judgments and apply them correctly in different traffic situations.SIPDE stands for:', '*Scan • Identify • Predict • Decide • Execute', 'See • Identify • Predict • Decide • Execute', 'See • Identify • Predict • Decide • Evaluate', 'Scan• Identify • Predict • Decide • Evaluate', '', 41);
+INSERT INTO `dmvquestions` VALUES('If a load extends____ feet or more from the rear of any vehicle, a red, yellow, or orange flag at least 16inches square must be attached to the end of the load.', '* four', 'five ', 'two', 'six', '', 42);
+INSERT INTO `dmvquestions` VALUES('If you pull a camper or trailer with your vehicle, you must maintain at least _____ feet following distance from other vehicles.', '*500', '1000', '200', '300', '', 43);
+INSERT INTO `dmvquestions` VALUES('You must be at least ____years of age to drive a recreational vehicle combination', '16', '*18', '21', '25', '', 44);
+INSERT INTO `dmvquestions` VALUES('At higher speeds, water can collect under tires and lift them off the surface of the road — this is called __________ ', '*hydroplaning', 'skidding', 'brake failure', 'None of the options', '', 45);
+INSERT INTO `dmvquestions` VALUES('A “blowout” is a burst tire that can throw your vehicle out of control. If you experience a blowout:', 'hold the steering wheel tightly, steer straight ahead, and slowly ease your foot off the accelerator.', 'Pull the vehicle completely off the road at the nearest safe location.', 'Do not brake until the vehicle is back under your control.', '*All of the options', '', 46);
+INSERT INTO `dmvquestions` VALUES('Crashes involving impaired drivers kill an average of ____ people each year in Minnesota and injure thousands of others.', '*240', '2000', '1600', '800', '', 47);
+INSERT INTO `dmvquestions` VALUES('A person with an alcohol concentration of ___or higher who is in control of a moving or parked vehicle, can be arrested for driving while impaired(DWI).', '*0.08', '0.04', '0.06', '0.01', '', 48);
+INSERT INTO `dmvquestions` VALUES('When drivers see this sign while driving, they should:', 'make a turn', 'Look for winding road', '*reduce their speed', 'increase their speed', 'http://3.bp.blogspot.com/-tN-xenaPG4U/T5VtClHh8mI/AAAAAAAADW8/jniuctjLrNA/s1600/600px-slippery_road_sign_svg.png', 49);
+INSERT INTO `dmvquestions` VALUES('This sign indicates:', '*Come to a complete stop.', 'Slow down or stop, if necessary', 'Do not enter', 'Do not make turn', 'http://images.all-free-download.com/images/graphiclarge/stop_sign_clip_art_12913.jpg', 50);
+INSERT INTO `dmvquestions` VALUES('This sign indicates:', 'Come to a complete stop.', '*Slow down or stop, if necessary', 'Do not enter', 'Do not make turn', 'http://www.clker.com/cliparts/b/c/e/b/12236128201031147781schoolfreeware_Yield_Sign.svg.med.png', 51);
+INSERT INTO `dmvquestions` VALUES('This sign indicates:', 'Come to a complete stop.', 'Slow down or stop, if necessary.', '*Do not enter that lane or road if this sign is facing you.', 'You have entered a lane of oncoming traffic', 'http://www.traditioncreek.com/storefront/images/products_signs/do_not_enter.jpg', 52);
+INSERT INTO `dmvquestions` VALUES('This sign indicates:', 'Come to a complete stop.', 'Slow down or stop, if necessary.', 'Do not enter that lane or road if this sign is facing you.', '*You have entered a lane of oncoming traffic', 'http://www.centerlinesupply.com/highway_products/signs/regulatory_signs/regulatory_signs_r4_r6/1447ef6e48969d/1/r5_1a_wrong_way.jpg', 53);
+INSERT INTO `dmvquestions` VALUES('This sign indicates:', '*No left turn', 'Come to a complete stop.', 'Slow down or stop, if necessary.', 'Do not enter that lane or road if this sign is facing you.', 'http://4.bp.blogspot.com/_PuwBK4Owh2E/TUc1xzWj9DI/AAAAAAAAKYg/HyExfF3F1iw/s400/prohibido+girar++a+la+izquierda+si.png', 54);
+INSERT INTO `dmvquestions` VALUES('This sign indicates:', 'No left turn', 'Come to a complete stop.', 'Slow down or stop, if necessary.', '*No right turn', 'http://stonehousesigns.com/sites/default/files/products/formatted/No_Right_Turn_Symbol_R3-1.jpg', 55);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'No left turn', 'Come to a complete stop.', 'No right turn', '*No U turn', 'http://www.clipartbest.com/cliparts/McL/Lpk/McLLpkbxi.gif', 56);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', '*No Parking', 'Come to a complete stop.', 'No right turn', 'No U turn', 'http://www.myparkingsign.com/img/lg/K/No-Parking-Symbol-Sign-K-5341.gif', 57);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', '*Stay on the right of the median, traffic island or obstruction', 'road is narrowing', 'road is turning', 'one way', 'http://www.education4drivers.com/websok/img/daily-sample-questions/va-road-signs-keep-to-the-right-q120.png', 58);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', '*Cross roads - A four-way intersection is ahead. Prepare\r\nto yield.', 'side road - Traffic is coming from your right. Watch for\r\nvehicles entering the roadway.', 'T intersection ahead - The road you are traveling on will end soon.\r\nPrepare to turn right or left. Yield to cross\r\ntraffic.', 'Y intersection ahead - The road ahead splits into two different directions.\r\nBe prepared for traffic crossing in your\r\npath and prepare to turn in one direction or\r\nthe other.', 'http://www.clipartbest.com/cliparts/9TR/obb/9TRobb8Te.gif', 59);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Cross roads - A four-way intersection is ahead. Prepareto yield.', '*Side road - Traffic is coming from your right. Watch forvehicles entering the roadway.', 'T intersection ahead - The road you are traveling on will end soon.Prepare to turn right or left. Yield to crosstraffic.', 'Y intersection ahead - The road ahead splits into two different directions.Be prepared for traffic crossing in yourpath and prepare to turn in one direction orthe other.', 'http://fce-study.netdna-ssl.com/images/upload-flashcards/883164/515224_m.jpeg', 60);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Cross roads - A four-way intersection is ahead. Prepareto yield.', 'side road - Traffic is coming from your right. Watch forvehicles entering the roadway.', '*T intersection ahead - The road you are traveling on will end soon.Prepare to turn right or left. Yield to crosstraffic.', 'Y intersection ahead - The road ahead splits into two different directions.Be prepared for traffic crossing in yourpath and prepare to turn in one direction orthe other.', 'http://dps.sd.gov/licensing/driver_licensing/images/Image19.gif', 61);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Cross roads - A four-way intersection is ahead. Prepareto yield.', 'side road - Traffic is coming from your right. Watch forvehicles entering the roadway.', 'T intersection ahead - The road you are traveling on will end soon.Prepare to turn right or left. Yield to crosstraffic.', '*Y intersection ahead - The road ahead splits into two different directions.Be prepared for traffic crossing in yourpath and prepare to turn in one direction orthe other.', 'http://ecx.images-amazon.com/images/I/41ksgpnLvvL._SY300_.jpg', 62);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', '*CurveThe road curves in the direction indicated.If the sign displays a speed limit, slow to theindicated speed', 'RoundaboutAs you approach a roundabout slow down to theadvisory speed and prepare to stop if necessary.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'http://www.audriving.com/traffic-signs/road-curve-right-ahead.jpg', 63);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'CurveThe road curves in the direction indicated.If the sign displays a speed limit, slow to theindicated speed', '*RoundaboutAs you approach a roundabout slow down to theadvisory speed and prepare to stop if necessary.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'https://www.nevadadot.com/uploadedImages/NDOT/Traveler_Info/Safety/roundabout_sign.gif', 64);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'CurveThe road curves in the direction indicated.If the sign displays a speed limit, slow to theindicated speed', 'RoundaboutAs you approach a roundabout slow down to theadvisory speed and prepare to stop if necessary.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'http://www.nzta.govt.nz/resources/traffic-control-devices-manual/sign-specifications/images/pw03-08-02-nolabels.gif', 65);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'CurveThe road curves in the direction indicated.If the sign displays a speed limit, slow to theindicated speed', 'RoundaboutAs you approach a roundabout slow down to theadvisory speed and prepare to stop if necessary.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', '*Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'http://2.bp.blogspot.com/_6cPcZtAe7r0/TPOf3cP3NNI/AAAAAAAAAKM/PVU4THkRKb4/s200/470px-Japanese_Road_sign_%2528Two-way_traffic%2529.svg.png', 66);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', '*Divided Highway BeginsThe road is dividing. Stay to the right', 'Divided Highway EndsThe divided road ends ahead. Two-way trafficwill no longer be divided by a center island.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'http://www.usa-traffic-signs.com/v/vspfiles/photos/w6-1_s-2.gif', 67);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Divided Highway BeginsThe road is dividing. Stay to the right', '*Divided Highway EndsThe divided road ends ahead. Two-way trafficwill no longer be divided by a center island.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'http://mypage.direct.ca/w/wfung/Roadsign/87.gif', 68);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Divided Highway BeginsThe road is dividing. Stay to the right', 'Divided Highway EndsThe divided road ends ahead. Two-way trafficwill no longer be divided by a center island.', '*Traffic Signal AheadThere is a traffic light at the next intersection.', 'Two-way Traffic AheadYou are leaving a one-way road and enteringa two-way road. Stay to the right.', 'http://www.calgarysafetycouncil.com/images/signs/big_lights.jpg', 69);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Divided Highway BeginsThe road is dividing. Stay to the right', 'Divided Highway EndsThe divided road ends ahead. Two-way trafficwill no longer be divided by a center island.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', '*Road Turns AheadThe road ahead sharply changes direction.Slow to a safe speed', 'http://o.quizlet.com/6a4oaxNac5EYp8r2lFv3GA_m.png', 70);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Crossing SignsCrossing signs warn driversto watch for animals, humans,and vehicles crossing the road', 'Divided Highway EndsThe divided road ends ahead. Two-way trafficwill no longer be divided by a center island.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', '*Steep HillThe road ahead declines steeply. Make sureyour vehicle’s brakes are in working orderbefore you proceed.', 'https://trafficsignstore.com/W7-1.gif', 71);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Road Turns AheadThe road ahead sharply changes direction.Slow to a safe speed', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', '*Lane EndsTwo lanes will become one.Vehicles in the right lane mustmerge into left-lane traffic.Right-lane vehicles must yield.', 'http://www.safetysupplywarehouse.com/v/vspfiles/photos/W14351-2.jpg', 72);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', '*Merging TrafficVehicles merge onto the roadway on which youare traveling. Be prepared to allow vehicles toenter traffic near you.', 'Road Turns AheadThe road ahead sharply changes direction.Slow to a safe speed', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Lane EndsTwo lanes will become one.Vehicles in the right lane mustmerge into left-lane traffic.Right-lane vehicles must yield.', 'http://nationaldrivingschoolusa.com/Signs3/merging_lanes.gif', 73);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Merging TrafficVehicles merge onto the roadway on which youare traveling. Be prepared to allow vehicles toenter traffic near you.', '*Added LaneThe roadway will gain an additional lane oftraffic. New traffic will not have to merge.', 'Winding Road AheadThe road ahead winds back and forth. Slow toa safe or indicated speed', 'Lane EndsTwo lanes will become one.Vehicles in the right lane mustmerge into left-lane traffic.Right-lane vehicles must yield.', 'http://www.signsshipped.com/wp-content/uploads/2011/04/8-2.png', 74);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Merging TrafficVehicles merge onto the roadway on which youare traveling. Be prepared to allow vehicles toenter traffic near you.', 'Added LaneThe roadway will gain an additional lane oftraffic. New traffic will not have to merge.', '*Low Clearance AheadDo not proceed if your vehicle is taller thanthe height indicated on the sign, or your vehiclemay become stuck.', 'Narrow BridgeThe bridge ahead is narrower than the roadway.', 'http://www.usa-traffic-signs.com/v/vspfiles/photos/w12-2_s-2.gif', 75);
+INSERT INTO `dmvquestions` VALUES('This sign indicates', 'Merging TrafficVehicles merge onto the roadway on which youare traveling. Be prepared to allow vehicles toenter traffic near you.', 'Added LaneThe roadway will gain an additional lane oftraffic. New traffic will not have to merge.', 'Low Clearance AheadDo not proceed if your vehicle is taller thanthe height indicated on the sign, or your vehiclemay become stuck.', '*Narrow BridgeThe bridge ahead is narrower than the roadway.', 'http://2.bp.blogspot.com/_BwA64N6uq0Y/S-O9Yd9rvfI/AAAAAAAAAbI/zt7jnBpKiJ0/s1600/what-does-a-narrow-bridge-sign-look-like-and-how-should-the-driver-react-when-he-sees-one.png', 76);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dmvQ_nonProd`
+--
+
+CREATE TABLE `dmvQ_nonProd` (
+  `question` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice1` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice2` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice3` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `choice4` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `attachmentLink` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `dmvQ_nonProd`
+--
+
+INSERT INTO `dmvQ_nonProd` VALUES('where is the atlantic ocean', 'north of US', '*east of US', 'west of US', 'south of US', 'http://www.bluebird-electric.net/oceanography/ocean_pictures/Atlantic_Ocean_World_Location_Map.png', 1);
+INSERT INTO `dmvQ_nonProd` VALUES('how high is mt. everest', '1000ft', '4500km', '50miles', '*8848mtrs', 'http://d3lp4xedbqa8a5.cloudfront.net/s3/digital-cougar-assets/AusGeo/2013/09/11/7371/mount-everest.jpg', 2);
+INSERT INTO `dmvQ_nonProd` VALUES('what is the capital of burundi', 'Bombay', '*Bujumbura', 'Nairobi', 'Wellington', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Burundi_Provinces.png/400px-Burundi_Provinces.png', 3);
+INSERT INTO `dmvQ_nonProd` VALUES('what is the color of a stop sign', '*red', 'green', 'blue', 'black', 'http://images.clipartpanda.com/black-and-white-stop-sign-clipart-dc6obaxc9.gif', 7);
+INSERT INTO `dmvQ_nonProd` VALUES('which of the following is not a technology company', 'blackberry', 'apple', 'orange', '*banana', 'http://pngimg.com/upload/banana_PNG817.png', 4);
+INSERT INTO `dmvQ_nonProd` VALUES('what does the sign refer to?', '*railroad crossing', 'no passing', 'one way', 'divided highway', 'http://ecx.images-amazon.com/images/I/41dyhfaqHFL._SY300_.jpg', 8);
+INSERT INTO `dmvQ_nonProd` VALUES('How much is 2+2?', '0', '2', '*4', '6', '', 10);
